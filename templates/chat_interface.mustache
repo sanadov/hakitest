@@ -1,0 +1,50 @@
+{{!
+@template local_activitychat/chat_interface
+
+Chat interface template for activity pages.
+
+Context variables required:
+* contextid - The context ID for the current activity
+}}
+
+<div id="activity-chat-container" class="activity-chat-container">
+    <!-- Chat Button -->
+    <button id="activity-chat-btn" class="chat-btn" title="Open Activity Assistant">
+        <i class="fa fa-comments"></i>
+        <span class="chat-btn-text">Chat</span>
+    </button>
+
+    <!-- Chat Window -->
+    <div class="chat-window">
+        <div class="chat-header">
+            <div class="chat-title">
+                <i class="fa fa-robot"></i>
+                <span>Activity Assistant</span>
+            </div>
+            <div class="chat-controls">
+                <button id="chat-minimize-btn" class="chat-control-btn" title="Minimize">
+                    <i class="fa fa-minus"></i>
+                </button>
+                <button id="chat-close-btn" class="chat-control-btn" title="Close">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="chat-body">
+            <div id="chat-messages" class="chat-messages"></div>
+        </div>
+
+        <div class="chat-footer">
+            <div class="chat-input-container">
+                <textarea id="chat-input"
+                         class="chat-input"
+                         placeholder="Type your message..."
+                         rows="1"></textarea>
+                <button id="chat-send-btn" class="chat-send-btn" title="Send message">
+                    <i class="fa fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
